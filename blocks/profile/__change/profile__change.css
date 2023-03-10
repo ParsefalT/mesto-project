@@ -1,0 +1,11 @@
+.profile__change {
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    transition: all .4s;
+}
+.profile__change:hover {
+    opacity: .6;
+}

@@ -1,0 +1,11 @@
+.element__like_active {
+    display: block;
+    min-width: 22px;
+    height: 19px;
+    box-sizing: border-box;
+    background: transparent url("../../../../images/active.svg") center center no-repeat;
+    background-size: contain;
+    border: 0px;
+    cursor: pointer;
+    transition: all .4s;
+}
