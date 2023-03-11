@@ -5,7 +5,16 @@
     border: 1px solid #FFFFFF;
     cursor: pointer;
     transition: all .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .profile__change:hover {
     opacity: .6;
+}
+@media screen and (max-width: 527px) {
+    .profile__change {
+        width: 18px;
+        height: 18px;
+    }
 }
