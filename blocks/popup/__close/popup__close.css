@@ -8,6 +8,7 @@
     background-color:transparent;
     cursor: pointer;
     background: url("../../../images/close.svg") center center no-repeat;
+    background-size: 100%;
     transition: all .4s;
 }
 .popup__close:hover {
