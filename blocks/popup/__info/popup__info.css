@@ -8,3 +8,12 @@
     color: #000000;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
+@media screen and (max-width: 527px){
+    .popup__info {
+        height: 27px;
+        padding-bottom: 0;
+    }
+    .popup__info:first-child {
+        margin-bottom: 30px;
+    }
+}
