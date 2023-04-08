@@ -26,49 +26,65 @@
         </section>
         <!-- elements -->
         <section class="elements">
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Карачевск</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Гора Эльбрус</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Домбай</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1556355-unsplash.png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Гора Эльбрус</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Домбай</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+                <article class="element">
+                    <img src="./images/trash.svg" alt="корзинка" class="element__trash">
+                    <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
+                    <div class="element__group">
+                        <h2 class="element__title">Карачаево-Ч...</h2>
+                        <button class="element__like" type="button" aria-label="лайк"></button>
+                    </div>
+                </article>
+        </section>
+        <template id="cards">
             <article class="element">
+                <img src="./images/trash.svg" alt="корзинка" class="element__trash">
                 <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
                 <div class="element__group">
                     <h2 class="element__title">Карачевск</h2>
                     <button class="element__like" type="button" aria-label="лайк"></button>
                 </div>
             </article>
-            <article class="element">
-                <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.png" alt="картинка">
-                <div class="element__group">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button class="element__like" type="button" aria-label="лайк"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
-                <div class="element__group">
-                    <h2 class="element__title">Домбай</h2>
-                    <button class="element__like" type="button" aria-label="лайк"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/kirill-pershin-1556355-unsplash.png" alt="картинка">
-                <div class="element__group">
-                    <h2 class="element__title">Гора Эльбрус</h2>
-                    <button class="element__like" type="button" aria-label="лайк"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.png" alt="картинка">
-                <div class="element__group">
-                    <h2 class="element__title">Домбай</h2>
-                    <button class="element__like" type="button" aria-label="лайк"></button>
-                </div>
-            </article>
-            <article class="element">
-                <img class="element__img" src="./images/kirill-pershin-1088404-unsplash(1).png" alt="картинка">
-                <div class="element__group">
-                    <h2 class="element__title">Карачаево-Ч...</h2>
-                    <button class="element__like" type="button" aria-label="лайк"></button>
-                </div>
-            </article>
-        </section>
+        </template>
     </main>
     <footer class="footer">
         <p class="footer__text">&#169; 2023 Mesto Russia</p>
@@ -85,5 +101,24 @@
             </form>
         </div>
     </div>
+    <div class="popup">
+        <div class="popup__container">
+            <h2 class="popup__title">Новое место</h2>
+            <button type="button" class="popup__close" aria-label="Закрыть"></button>
+            <form action="#" class="popup__form" name="yourSelf">
+               <input class="popup__info" type="text" placeholder="Название" value="Название" name="name" required>
+                <input class="popup__info" type="text" placeholder="Ссылка на картинку" value="Ссылка на картинку" name="linkImg" required>
+                <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <div class="popup">
+        <figure class="popup__figure">
+            <img class="popup__img" src="#" alt="большая картинка">
+            <figcaption class="popup__caption">asdad</figcaption>
+            <button type="button" class="popup__close" aria-label="Закрыть"></button>
+        </figure>
+    </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>
