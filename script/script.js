@@ -60,7 +60,7 @@ function addCard(nameValue, linkValue) {
     elem.prepend(card);
 }
 function popupImg(e) {
-    let card = e.target.parentNode;
+    const card = e.target.parentNode;
     const popupImg = document.querySelector('.popup__img');
     const popupCaption = document.querySelector('.popup__caption');
     const image = card.querySelector('.element__img');
