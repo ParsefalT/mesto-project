@@ -28,8 +28,7 @@ function submitFormEditProfile(evt) {
     closePopup(popupEdit);
 }
 formEditProfile.addEventListener('submit', submitFormEditProfile);
-popupName.value = profileTitle.textContent;
-popupDescr.value = profileDescr.textContent;
+
 
 // cardPopup
 function createCard(nameValue, linkValue) {
@@ -93,6 +92,8 @@ function closePopup(closePopup) {
 profileChange.addEventListener('click', function(e) {
     if (e.target && e.currentTarget) {
         openPopup(popupEdit);
+        popupName.value = profileTitle.textContent;
+        popupDescr.value = profileDescr.textContent;
     }
 });
 
