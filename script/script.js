@@ -19,7 +19,6 @@ const popupImages         = document.querySelector('.popup__img');
 const popupCaption        = document.querySelector('.popup__caption');
 const cardTemplate        = document.querySelector('#cards').content;
 
-
 // priflePopup
 function submitFormEditProfile(evt) {
     evt.preventDefault();
@@ -28,7 +27,6 @@ function submitFormEditProfile(evt) {
     closePopup(popupEdit);
 }
 formEditProfile.addEventListener('submit', submitFormEditProfile);
-
 
 // cardPopup
 function createCard(nameValue, linkValue) {
@@ -112,13 +110,14 @@ buttonsClosePopup.forEach(item => {
     });
 });
 // Если не пртоив, я оставил этот коментарий для след месяца 
-// document.addEventListener('keydown', function(e) {
-//     if (e.code == 'Escape') {
-//         popup.forEach(item => {
-//             item.classList.remove('popup_opened');
-//         });
-//     }
-// });
+const popup = document.querySelectorAll('.popup');
+document.addEventListener('keydown', function(e) {
+    if (e.code == 'Escape') {
+        popup.forEach(item => {
+            item.classList.remove('popup_opened');
+        });
+    }
+});
 
 
 
