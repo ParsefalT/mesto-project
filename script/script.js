@@ -104,9 +104,7 @@ buttonCard.addEventListener('click', (e) => {
 buttonsClosePopup.forEach(item => {
     item.addEventListener('click', (e) => {
         const popup = e.target.parentNode.parentNode;
-        if (e.target.className === 'popup__close') {
             closePopup(popup);
-        }
     });
 });
 // Если не пртоив, я оставил этот коментарий для след месяца 
