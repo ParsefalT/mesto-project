@@ -1,0 +1,12 @@
+.popup__info-error {
+    color: red;
+    align-self: flex-start;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    visibility: hidden;
+    height: 13px;
+}
+.popup__info-error_active {
+    visibility: visible;
+}
