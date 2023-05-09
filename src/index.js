@@ -6,7 +6,8 @@ import './pages/index.css';
 import initialCards from "./components/constants.js";
 import { openPopup, closePopup } from "./components/utils.js";
 import { createCard, addCard } from "./components/card.js";
-import {enableValidation} from "./components/validate.js" 
+import { enableValidation } from "./components/validate.js" 
+import { closePopupOverlay, btnClosePopup, openPopupCard } from "./components/modal.js";
 
 // main variables
 const profileChange       = document.querySelector('.profile__change');
@@ -20,6 +21,12 @@ const profileTitle        = document.querySelector('.profile__title');
 const profileDescr        = document.querySelector('.profile__descr');
 const formEditProfile     = document.querySelector('.popup_form-change');
 const formCards           = document.querySelector('.popup_form-submit');
+const btnDisabled         = document.querySelector('.popup__save.popup__save_card');
+
+// modal
+closePopupOverlay()
+btnClosePopup()
+openPopupCard()
 
 // profilePopup
 function submitFormEditProfile(evt) {
@@ -36,8 +43,10 @@ for (let card of initialCards) {
 
 formCards.addEventListener('submit', function(e) {
     e.preventDefault();
-    addCard(createCard(popupCardName.value, popupCardLink.value))
+    addCard(createCard(popupCardName.value, popupCardLink.value));
     closePopup(popupCreateCard);
+    btnDisabled.disabled = true; 
+    btnDisabled.classList.add('popup__save_disabled') 
     formCards.reset();
 });
 
@@ -56,8 +65,3 @@ enableValidation({
     inactiveButtonClass: 'popup__save_disabled',
     inputErrorClass: 'popup__info-error_active',
 }); 
-
-
-
-
-

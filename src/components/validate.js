@@ -30,9 +30,11 @@ function hasInvalidInput(inputList) {
 
 function toggleButtonState(inputList, btnSave, objForm) {
     if (hasInvalidInput(inputList)) {
+        btnSave.disabled = true;
         btnSave.classList.add(objForm.inactiveButtonClass);
     } else {
         btnSave.classList.remove(objForm.inactiveButtonClass);
+        btnSave.disabled = false;
     } 
 };
  
@@ -59,4 +61,4 @@ function enableValidation(objForm) {
     });
 }
 
-export {enableValidation};
+export { enableValidation };
