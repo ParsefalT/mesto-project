@@ -13,6 +13,7 @@
 }
 .popup__close:hover {
     opacity: .6;
+    transform: rotate(-180deg);
 }
 @media screen and (max-width: 527px) {
     .popup__close {

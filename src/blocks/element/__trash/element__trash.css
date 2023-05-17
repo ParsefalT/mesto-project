@@ -7,4 +7,5 @@
 }
 .element__trash:hover {
     opacity: .6;
+    transform: scale(1.10);
 }

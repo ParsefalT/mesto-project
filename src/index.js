@@ -8,7 +8,7 @@ import { openPopup, closePopup } from "./components/utils.js";
 import { createCard, addCard } from "./components/card.js";
 import { enableValidation } from "./components/validate.js" 
 import { closePopupOverlay, btnClosePopup, openPopupCard } from "./components/modal.js";
-
+import { setProfileDate } from './components/api';
 // main variables
 const profileChange       = document.querySelector('.profile__change');
 const popupEdit           = document.querySelector('.popup_edit-profile');
@@ -33,6 +33,7 @@ function submitFormEditProfile(evt) {
     evt.preventDefault();
     profileTitle.textContent = popupName.value;
     profileDescr.textContent = popupDescr.value;
+    setProfileDate(profileTitle.textContent, profileDescr.textContent)
     closePopup(popupEdit);
 }
 formEditProfile.addEventListener('submit', submitFormEditProfile);
@@ -51,6 +52,7 @@ formCards.addEventListener('submit', function(e) {
 });
 
 profileChange.addEventListener('click', function(e) {
+    // console.log(f) 
     if (e.target && e.currentTarget) {
         openPopup(popupEdit);
         popupName.value = profileTitle.textContent;
@@ -65,3 +67,16 @@ enableValidation({
     inactiveButtonClass: 'popup__save_disabled',
     inputErrorClass: 'popup__info-error_active',
 }); 
+// fetch
+
+
+// const f = fetch('https://nomoreparties.co/v1/plus-cohort-24/users/me', {
+//   headers: {
+//     authorization: 'c284f9ca-c197-44c5-b67f-9e09686139bb',
+//     'Content-type': 'application-json'
+//   }
+// })
+//     .then(res => res.json())
+//     .then((result) => {
+//     console.log(result);
+// });
