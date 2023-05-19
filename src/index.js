@@ -66,17 +66,4 @@ enableValidation({
     submitButton: '.popup__save',
     inactiveButtonClass: 'popup__save_disabled',
     inputErrorClass: 'popup__info-error_active',
-}); 
-// fetch
-
-
-// const f = fetch('https://nomoreparties.co/v1/plus-cohort-24/users/me', {
-//   headers: {
-//     authorization: 'c284f9ca-c197-44c5-b67f-9e09686139bb',
-//     'Content-type': 'application-json'
-//   }
-// })
-//     .then(res => res.json())
-//     .then((result) => {
-//     console.log(result);
-// });
+});
