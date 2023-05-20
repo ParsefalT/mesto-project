@@ -5,9 +5,9 @@ const config = {
     }
 }
 
-function setProfileDate(name, about) {
+function setProfileDate(name, about, method) {
     return fetch('https://nomoreparties.co/v1/plus-cohort-24/users/me', {
-        method: "PATCH",
+        method: method,
         headers: config.upadate,
         body: JSON.stringify({
             name: name,

@@ -33,7 +33,7 @@ function submitFormEditProfile(evt) {
     evt.preventDefault();
     profileTitle.textContent = popupName.value;
     profileDescr.textContent = popupDescr.value;
-    setProfileDate(profileTitle.textContent, profileDescr.textContent)
+    setProfileDate(profileTitle.textContent, profileDescr.textContent, "PATCH")
     closePopup(popupEdit);
 }
 formEditProfile.addEventListener('submit', submitFormEditProfile);
